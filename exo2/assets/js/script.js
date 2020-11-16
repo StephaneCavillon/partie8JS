@@ -23,7 +23,7 @@ let fable4 = document.querySelector('#fable4');
 let fable5 = document.querySelector('#fable5');
 
 //création des listeners
-btnFable1.addEventListener('click', function (){
+btnFable1.addEventListener('click', function (event){
     event.preventDefault();
 
     window.scrollTo({
@@ -33,7 +33,7 @@ btnFable1.addEventListener('click', function (){
     });
 });
 
-btnFable2.addEventListener('click', function (){
+btnFable2.addEventListener('click', function (event){
     event.preventDefault();
 
     window.scrollTo({
@@ -43,7 +43,7 @@ btnFable2.addEventListener('click', function (){
     });
 });
 
-btnFable3.addEventListener('click', function (){
+btnFable3.addEventListener('click', function (event){
     event.preventDefault();
 
     window.scrollTo({
@@ -53,7 +53,7 @@ btnFable3.addEventListener('click', function (){
     });
 });
 
-btnFable4.addEventListener('click', function (){
+btnFable4.addEventListener('click', function (event){
     event.preventDefault();
 
     window.scrollTo({
@@ -63,7 +63,7 @@ btnFable4.addEventListener('click', function (){
     });
 });
 
-btnFable5.addEventListener('click', function (){
+btnFable5.addEventListener('click', function (event){
     event.preventDefault();
 
     window.scrollTo({
