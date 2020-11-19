@@ -11,6 +11,7 @@
 
 //création des variables
 let navbar = document.querySelector('.navbar');
+// possibilité d'amélioration par création d'ID dans le HTML ou  1 seul QuerySelectorAll
 let btnFable1 = document.querySelectorAll('a').item(1);
 let btnFable2 = document.querySelectorAll('a').item(2);
 let btnFable3 = document.querySelectorAll('a').item(3);

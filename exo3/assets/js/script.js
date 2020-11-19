@@ -8,14 +8,18 @@ window.addEventListener('load', function (){
     });
 });
 
+console.log( 'body height' +body.clientHeight);
+console.log(' window height' + window.innerHeight);
 
 //ensuite remplacer par 'visible'
 p.forEach(item => {
     window.addEventListener('scroll', function (){
-        if(scrollY > (item.offsetTop - 100)){
+        //pour le dernier <p> on rajoute un element dans la condition pour comparer le scrollY à la hauteur total de la page moins la taille d'un écran
+        if(scrollY > (item.offsetTop - 100) || scrollY >= document.body.clientHeight - window.innerHeight){
             item.classList.replace('invisible', 'visible');
+            console.log( 'scrollY '+ scrollY);
+
         } else {
-            console.log('invisible !');
             item.classList.replace('visible', 'invisible');
         };
     });
